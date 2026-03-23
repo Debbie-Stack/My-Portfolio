@@ -3,22 +3,28 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="This is my portfolio, I created on my Front-end journey"/>
+    <meta
+      name="description"
+      content="This is my portfolio, I created on my Front-end journey"
+    />
     <title>Debbie's Portfolio</title>
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
     />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+    />
     <link rel="stylesheet" href="./style.css" />
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
   </head>
   <body class="bg-purple-500">
-    <header id="home" class="">
+    <header id="home">
       <nav
         class="fixed lg:static mx-auto bg-purple-500 z-10 top-0 flex justify-between items-center w-full lg:w-[1200px] mx-auto lg:h-20 h-15 lg:px-0 px-5"
         id="nav"
-      > 
+      >
         <div>
           <h1 class="font-bold text-xl text-white text-shadow-md">
             &#8881;DEBBIE EFFIONG&#8880;
@@ -52,24 +58,54 @@
           </ul>
         </div>
 
-        <div>
+        <div class="relative">
           <button
-            class="hidden lg:block p-2 bg-white rounded-full border-3 border-purple-600 text-gray-500 font-bold">Menu
+            class="hidden lg:block p-2 bg-white rounded-full border-3 border-purple-600 text-gray-500 font-bold"
+          >
+            Menu
           </button>
-          <button class="lg:hidden block">
+          <button onclick="showMenu()" class="lg:hidden block">
             <i class="fa-solid fa-bars fa-fade hidden text-white"></i>
           </button>
+          <ul id="slide"
+            class="absolute transition translate-x-10 top-10 py-10 bg-purple-500/40 backdrop-blur-lg flex flex-col justify-between items-center gap-15 text-md font-bold text-white hover:rounded-full hover:border-purple-900 hover:px-3 p-1"
+          >
+            <li onclick="showMenu()"
+              class="hover:bg-white border-3 border-transparent hover:border-3 hover:rounded-full hover:border-purple-700 hover:text-black p-1"
+            >
+              <a href="#home">Home</a>
+            </li>
+            <li onclick="showMenu()"
+              class="hover:bg-white border-3 border-transparent hover:border-3 hover:rounded-full hover:border-purple-700 hover:text-black p-1"
+            >
+              <a href="#about">About</a>
+            </li>
+            <li onclick="showMenu()"
+              class="hover:bg-white border-3 border-transparent hover:border-3 hover:rounded-full hover:border-purple-700 hover:text-black p-1"
+            >
+              <a href="#service">Services</a>
+            </li>
+            <li onclick="showMenu()"
+              class="hover:bg-white border-3 border-transparent hover:border-3 hover:rounded-full hover:border-purple-700 hover:text-black p-1"
+            >
+              <a href="#contact">Contact</a>
+            </li>
+          </ul>
         </div>
       </nav>
     </header>
 
-    <main >
+    <main>
       <section class="home-section">
         <div
           class="bg-black flex-col lg:flex-row flex justify-between items-center gap-10 border-2 w-full h-screen lg:rounded-lg lg:w-[1200px] p-10 mx-auto relative"
         >
-          <div class="w-full h-full lg:h-auto lg:w-[600px] flex flex-col justify-center items-center lg:items-start lg:justify-start absolute  px-5 text-center lg:text-left lg:static">
-            <h4 class="font-bold font-serif text-lg text-white">Hey, i'm Debbie...</h4>
+          <div
+            class="w-full h-full lg:h-auto lg:w-[600px] flex flex-col justify-center items-center lg:items-start lg:justify-start absolute px-5 text-center lg:text-left lg:static"
+          >
+            <h4 class="font-bold font-serif text-lg text-white">
+              Hey, i'm Debbie...
+            </h4>
             <h1 class="font-bold text-[50px] text-purple-500 font-serif">
               Front<span class="text-white">end Developer</span>
             </h1>
@@ -106,7 +142,7 @@
         </div>
       </section>
 
-    <!-- About page -->
+      <!-- About page -->
       <section class="about-section" id="about">
         <div
           class="flex flex-col-reverse lg:flex-row-reverse lg:justify-between items-center w-full lg:w-[1200px] h-auto lg:h-[80vh] bg-black mx-auto lg:mt-50 mt-0 rounded-lg p-10"
@@ -114,7 +150,9 @@
           <div
             class="w-full lg:w-[500px] rounded-tr-[100px] rounded-bl-[100px] lg:border-4 border-purple-500 mt-10 lg:p-10 bg-black"
           >
-            <h2 class="font-bold text-xl mb-2 text-purple-400">I'm Debbie...</h2>
+            <h2 class="font-bold text-xl mb-2 text-purple-400">
+              I'm Debbie...
+            </h2>
             <h3 class="font-serif text-justify text-sm text-purple-200">
               A Full-stack Web Developer with a passion for building innovative
               solutions by creating and crafting modern, responsive and user
@@ -140,7 +178,7 @@
 
       <section class="service-section" id="service">
         <div
-          class="w-full lg:w-[1200px] h-auto lg:h-[80vh] flex lg:flex-row flex-col justify-center items-center bg-black lg:mt-50 mt-0 rounded-lg lg:px-10 lg:py-10  py-20 px-5 mx-auto"
+          class="w-full lg:w-[1200px] h-auto lg:h-[80vh] flex lg:flex-row flex-col justify-center items-center bg-black lg:mt-50 mt-0 rounded-lg lg:px-10 lg:py-10 py-20 px-5 mx-auto"
         >
           <div class="lg:mr-20">
             <h1
@@ -149,9 +187,13 @@
               My Skills :
             </h1>
           </div>
-         
-          <div class="w-full flex justify-between gap-5 lg:flex-row flex-col lg:pr-30">
-            <ul class="w-full font-serif text-purple-300 cursor-pointer border-2 border-gray-500 p-4 rounded-lg hover:bg-gray-800">
+
+          <div
+            class="w-full flex justify-between gap-5 lg:flex-row flex-col lg:pr-30"
+          >
+            <ul
+              class="w-full font-serif text-purple-300 cursor-pointer border-2 border-gray-500 p-4 rounded-lg hover:bg-gray-800"
+            >
               <h3 class="font-bold text-purple-500 text-xl mb-5">Web Design</h3>
               <li class="hover:text-pink-300">UI/UX Design</li>
               <li class="hover:text-pink-300">Responsive Websites</li>
@@ -159,7 +201,9 @@
               <li class="hover:text-pink-300">User-Interface</li>
             </ul>
 
-            <ul class="w-full font-serif lg:text-left text-right text-purple-300 cursor-pointer border-2 border-gray-500 p-4 rounded-lg hover:bg-gray-800">
+            <ul
+              class="w-full font-serif lg:text-left text-right text-purple-300 cursor-pointer border-2 border-gray-500 p-4 rounded-lg hover:bg-gray-800"
+            >
               <h3 class="font-bold text-purple-500 text-xl mb-5">Front-end</h3>
               <li class="hover:text-pink-300">React</li>
               <li class="hover:text-pink-300">JS</li>
@@ -167,7 +211,9 @@
               <li class="hover:text-pink-300">HTML</li>
             </ul>
 
-            <ul class="w-full font-serif text-purple-300 cursor-pointer border-2 border-gray-500 p-4 rounded-lg hover:bg-gray-800">
+            <ul
+              class="w-full font-serif text-purple-300 cursor-pointer border-2 border-gray-500 p-4 rounded-lg hover:bg-gray-800"
+            >
               <h3 class="font-bold text-purple-500 text-xl mb-5">
                 Soft Skills
               </h3>
@@ -180,15 +226,20 @@
         </div>
       </section>
 
-      <section class="form-section " id="contact">
+      <section class="form-section" id="contact">
         <div
           class="flex lg:flex-row flex-col justify-center lg:h-[85vh] h-auto w-full lg:w-[1200px] lg:py-1 py-20 bg-black mx-auto lg:mt-50 mt-0 rounded-lg cursor-pointer"
         >
-          <div class="px-10 lg:w-[600px] flex  flex-col justify-center items-center">
-            <h3 class=" text-white text-xl font-bold lg:mb-5 mb-3 mt-10">
+          <div
+            class="px-10 lg:w-[600px] flex flex-col justify-center items-center"
+          >
+            <h3 class="text-white text-xl font-bold lg:mb-5 mb-3 mt-10">
               Send me a message &#129083;
             </h3>
-            <form action="#" class="w-full flex justify-center flex-col px-10 lg:w-[400px]">
+            <form
+              action="#"
+              class="w-full flex justify-center flex-col px-10 lg:w-[400px]"
+            >
               <div>
                 <input
                   type="text"
@@ -254,7 +305,10 @@
               >
             </div>
 
-            <div id="image" class="hidden lg:flex justify-center items-center mt-5">
+            <div
+              id="image"
+              class="hidden lg:flex justify-center items-center mt-5"
+            >
               <img
                 src="./image/qyou-contact-1166590_640.png"
                 alt=""
@@ -276,13 +330,18 @@
         >
           <p class="text-white">Back To Top</p>
           <a href="#home">
-            <button class="rounded-full w-10 h-10 bg-white p-2 mr-2 animate-bounce">
+            <button
+              class="rounded-full w-10 h-10 bg-white p-2 mr-2 animate-bounce"
+            >
               <i style="font-size: 15px" class="fas">&#xf062;</i>
             </button>
           </a>
         </div>
 
-        <div class="flex lg:flex-row flex-col lg:gap-50 gap-10 text-white mt-20" id="footer-links">
+        <div
+          class="flex lg:flex-row flex-col lg:gap-50 gap-10 text-white mt-20"
+          id="footer-links"
+        >
           <div>
             <p class="w-80 mx-auto text-center lg:w-full">
               Empowered by <span class="font-bold">NEW HORIZON</span> Designed
@@ -314,10 +373,15 @@
           </div>
         </div>
 
-        <div id="footer-name" class="mt-10 ml-2 border-l-10 lg:border-l-20 border-purple-500">
+        <div
+          id="footer-name"
+          class="mt-10 ml-2 border-l-10 lg:border-l-20 border-purple-500"
+        >
           <h1 class="font-bold lg:text-8xl text-5xl text-white ml-5">DEBBIE</h1>
         </div>
       </section>
     </footer>
+
+    <script src="./index.js"></script>
   </body>
 </html>

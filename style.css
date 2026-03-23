@@ -1,3 +1,8 @@
 html{
     scroll-behavior: smooth;
 }
+
+.slide{
+    transform: translateX(-190px);
+    padding-inline: 60px;
+}
