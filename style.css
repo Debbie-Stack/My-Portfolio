@@ -7,9 +7,6 @@ html{
     padding-inline: 60px;
 }
 .desktopSlide{
-    transform: translateX(-200px);
+    transform: translateX(-190px);
     padding-inline: 60px;
-}
-.imageBox{
-
 }

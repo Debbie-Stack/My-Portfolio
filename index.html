@@ -140,21 +140,25 @@
               User-Friendly websites and provide the best User-Experiences.
             </p>
             <div class="mt-10 lg:mt-20">
+              <a href="#contact">
               <button
-                class="p-2 bg-purple-800 text-white rounded-lg mr-5 hover:bg-purple-500 hover:border-3 hover:rounded-full hover:border-black hover:animate-bounce"
+                class="p-2 bg-purple-800 text-white rounded-lg mr-5 hover:bg-purple-500 hover:rounded-full"
               >
                 Get in Touch
               </button>
+              </a>
+              <a href="#service">
               <button
-                class="p-2 bg-gray-100 shadow-lg rounded-lg hover:bg-purple-500 hover:border-3 hover:rounded-full hover:border-black hover:text-white hover:animate-bounce"
+                class="p-2 bg-gray-100 shadow-lg rounded-lg hover:bg-purple-500 hover:rounded-full hover:text-white"
               >
                 Browse Projects
               </button>
+              </a>
             </div>
           </div>
 
           <div
-            class="imageBox"
+            class="lg:w-[400px] flex justify-center items-center lg:border-6 border-y-purple-500 border-r-purple-500 lg:rounded-full lg:overflow-hidden"
           >
             <div
               class="h-screen lg:h-[400px] w-full lg:w-[300px] flex justify-center items-baseline"
@@ -277,8 +281,8 @@
               <div>
                 <input
                   type="email"
-                  name="name"
-                  placeholder="Your Email"
+                  name="email"
+                  required placeholder="Your Email"
                   class="w-full lg:w-[400px] mb-5 bg-white rounded-lg p-3"
                 />
               </div>
@@ -298,9 +302,10 @@
           <div id="main-div">
             <div
               id="info-div"
-              class=" lg:w-[600px] mt-10 flex flex-col items-center justify-center"
+              class=" lg:w-[600px] mt-5 flex flex-col items-center justify-center"
             >
-              <a href="tel:+23409165241862" class=" group w-[300px] flex rounded-lg bg-white mb-5 p-2">
+            <!-- Mobile Number -->
+              <a href="tel:+23409165241862" class=" group w-[300px] flex rounded-lg bg-white mb-5 p-2 hover:bg-purple-400 hover:text-white hover:text-shadow-lg">
                 <i class="group-hover:animate-bounce fas mr-2 text-[24px] group-hover:animate-bounce"
                   >&#xf095;</i
                 >
@@ -309,29 +314,35 @@
                   +234 916 524 1862
                 </p></a
               >
-              <a href="mailto:deboraheffiong202@gmail.com" class=" group w-[300px] flex rounded-lg bg-white mb-5 p-2">
-                <i class="fas mr-2 text-[24px] hover:animate-bounce"
-                >
+              <!-- E-mail -->
+              <a href="mailto:deboraheffiong202@gmail.com" class="group w-[300px] flex rounded-lg bg-white mb-5 p-2 hover:bg-purple-400 hover:text-white hover:text-shadow-lg">
+                <i class="group-hover:animate-bounce fas mr-2 text-[24px] hover:animate-bounce"
                 >&#xf1fa;</i
                 >
-                <p class="transition group-hover:translate-x-20">
+                <p class="transition group-hover:translate-x-5"
+                >
                   deboraheffiong202@gmail.com
                 </p></a
               >
+              <!-- Address -->
               <a
                 href="https://www.google.com/maps/place/Hopeville+Estate/@6.4734076,3.6243369,17z/data=!3m1!4b1!4m6!3m5!1s0x103bf97be009fa41:0x76a2611fab463b62!8m2!3d6.4734023!4d3.6269172!16s%2Fg%2F11g8970mxn?entry=ttu&g_ep=EgoyMDI2MDExMy4wIKXMDSoKLDEwMDc5MjA3M0gBUAM%3D"
-              >
-                <p class="w-[300px] rounded-lg bg-white hover:bg-purple-400">
-                  <i class="fas mr-3 text-[24px] p-2 hover:animate-bounce"
-                    >&#xf3c5;</i
-                  >Hopeville Estate Sangotedo, Lagos.
+                class="group w-[300px] flex rounded-lg bg-white mb-5 p-2 hover:bg-purple-400 hover:text-white hover:text-shadow-lg"
+                >
+                <i class="group-hover:animate-bounce fas mr-3 text-[24px] p-2 hover:animate-bounce"
+                >&#xf3c5;</i
+                >
+                <p class="transition group-hover:translate-x-5"
+                >
+                  Hopeville Estate Sangotedo, Lagos.
                 </p></a
               >
             </div>
 
+               <!-- Form-image -->
             <div
               id="image"
-              class="hidden lg:flex justify-center items-center mt-5"
+              class="hidden lg:flex justify-center items-center"
             >
               <img
                 src="./image/qyou-contact-1166590_640.png"
@@ -410,4 +421,3 @@
   </body>
 </html>
 
-<!-- "lg:w-[400px] flex justify-center items-center lg:border-6 border-y-purple-500 border-r-purple-500 lg:rounded-full lg:overflow-hidden" -->
