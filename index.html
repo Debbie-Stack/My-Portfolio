@@ -59,16 +59,42 @@
         </div>
 
         <div class="relative">
-          <button
+          <button onclick="desktopMenu()"
             class="hidden lg:block p-2 bg-white rounded-full border-3 border-purple-600 text-gray-500 font-bold"
           >
             Menu
           </button>
+          <ul id="desktopSlide"
+            class="hidden lg:block absolute transition translate-x-10 top-10 py-10 bg-purple-500/40 backdrop-blur-lg flex flex-col justify-between items-center gap-15 text-md font-bold text-white hover:rounded-full hover:border-purple-900 hover:px-3 p-1"
+          >
+            <li onclick="desktopMenu()"
+              class="hover:bg-white border-3 border-transparent hover:border-3 hover:rounded-full hover:border-purple-700 hover:text-black p-1"
+            >
+              <a href="#home">Home</a>
+            </li>
+            <li onclick="desktopMenu()"
+              class="hover:bg-white border-3 border-transparent hover:border-3 hover:rounded-full hover:border-purple-700 hover:text-black p-1"
+            >
+              <a href="#about">About</a>
+            </li>
+            <li onclick="desktopMenu()"
+              class="hover:bg-white border-3 border-transparent hover:border-3 hover:rounded-full hover:border-purple-700 hover:text-black p-1"
+            >
+              <a href="#service">Services</a>
+            </li>
+            <li onclick="desktopMenu()"
+              class="hover:bg-white border-3 border-transparent hover:border-3 hover:rounded-full hover:border-purple-700 hover:text-black p-1"
+            >
+              <a href="#contact">Contact</a>
+            </li>
+          </ul>
+
+          
           <button onclick="showMenu()" class="lg:hidden block">
             <i class="fa-solid fa-bars fa-fade hidden text-white"></i>
           </button>
           <ul id="slide"
-            class="absolute transition translate-x-10 top-10 py-10 bg-purple-500/40 backdrop-blur-lg flex flex-col justify-between items-center gap-15 text-md font-bold text-white hover:rounded-full hover:border-purple-900 hover:px-3 p-1"
+            class="block lg:hidden absolute transition translate-x-10 top-10 py-10 bg-purple-500/40 backdrop-blur-lg flex flex-col justify-between items-center gap-15 text-md font-bold text-white hover:rounded-full hover:border-purple-900 hover:px-3 p-1"
           >
             <li onclick="showMenu()"
               class="hover:bg-white border-3 border-transparent hover:border-3 hover:rounded-full hover:border-purple-700 hover:text-black p-1"
@@ -128,7 +154,7 @@
           </div>
 
           <div
-            class="lg:w-[400px] flex justify-center items-center lg:border-6 border-y-purple-500 border-r-purple-500 lg:rounded-full lg:overflow-hidden"
+            class="imageBox"
           >
             <div
               class="h-screen lg:h-[400px] w-full lg:w-[300px] flex justify-center items-baseline"
@@ -383,3 +409,5 @@
     <script src="./index.js"></script>
   </body>
 </html>
+
+<!-- "lg:w-[400px] flex justify-center items-center lg:border-6 border-y-purple-500 border-r-purple-500 lg:rounded-full lg:overflow-hidden" -->
