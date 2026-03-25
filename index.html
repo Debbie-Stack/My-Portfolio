@@ -26,70 +26,49 @@
         id="nav"
       >
         <div>
-          <h1 class="font-bold text-xl text-white text-shadow-md">
+          <h1 class="font-bold text-xl text-white text-shadow-md font-[Open-Sans]">
             &#8881;DEBBIE EFFIONG&#8880;
           </h1>
         </div>
 
         <div class="hidden lg:block">
           <ul
-            class="flex justify-between items-center gap-15 text-md font-bold text-white hover:rounded-full hover:border-purple-900 hover:px-3 p-1"
+            class="flex justify-between items-center gap-15 text-md font-bold text-white hover:rounded-full hover:border-purple-900 font-[Open-Sans]"
           >
             <li
-              class="hover:bg-white border-3 border-transparent hover:border-3 hover:rounded-full hover:border-purple-700 hover:text-black p-1"
+              class="hover:bg-white border-3 border-transparent rounded-full hover:border-purple-700 hover:text-black p-1 font-[Open-Sans]"
             >
               <a href="#home">Home</a>
             </li>
             <li
-              class="hover:bg-white border-3 border-transparent hover:border-3 hover:rounded-full hover:border-purple-700 hover:text-black p-1"
+              class="hover:bg-white border-3 border-transparent hover:rounded-full hover:border-purple-700 hover:text-black p-1 font-[Open-Sans]"
             >
               <a href="#about">About</a>
             </li>
             <li
-              class="hover:bg-white border-3 border-transparent hover:border-3 hover:rounded-full hover:border-purple-700 hover:text-black p-1"
+              class="hover:bg-white border-3 border-transparent hover:rounded-full hover:border-purple-700 hover:text-black p-1 font-[Open-Sans]"
             >
               <a href="#service">Services</a>
             </li>
             <li
-              class="hover:bg-white border-3 border-transparent hover:border-3 hover:rounded-full hover:border-purple-700 hover:text-black p-1"
+              class="hover:bg-white border-3 border-transparent hover:rounded-full hover:border-purple-700 hover:text-black p-1 font-[Open-Sans]"
             >
               <a href="#contact">Contact</a>
             </li>
+            <button class="p-2 border-1 border-white rounded-lg bg-black">
+            <li class="underline decoration-solid hover:text-purple-400 font-[Open-Sans]">
+              <a href="https://github.com/Debbie-Stack?tab=repositories" target="_blank">Github</a>
+            </li>
+            </button>
+            <button class="p-2 border-1 border-white rounded-lg bg-black">
+            <li class="underline decoration-solid hover:text-purple-400 font-[Open-Sans]">
+              <a href="https://www.linkedin.com/in/deborah-effiong-3954903a9/" target="_blank">Linkedin</a>
+            </li>
+            </button>
           </ul>
         </div>
 
-        <div class="relative">
-          <button onclick="desktopMenu()"
-            class="hidden lg:block p-2 bg-white rounded-full border-3 border-purple-600 text-gray-500 font-bold"
-          >
-            Menu
-          </button>
-          <ul id="desktopSlide"
-            class="hidden lg:block absolute transition translate-x-10 top-10 py-10 bg-purple-500/40 backdrop-blur-lg flex flex-col justify-between items-center gap-15 text-md font-bold text-white hover:rounded-full hover:border-purple-900 hover:px-3 p-1"
-          >
-            <li onclick="desktopMenu()"
-              class="hover:bg-white border-3 border-transparent hover:border-3 hover:rounded-full hover:border-purple-700 hover:text-black p-1"
-            >
-              <a href="#home">Home</a>
-            </li>
-            <li onclick="desktopMenu()"
-              class="hover:bg-white border-3 border-transparent hover:border-3 hover:rounded-full hover:border-purple-700 hover:text-black p-1"
-            >
-              <a href="#about">About</a>
-            </li>
-            <li onclick="desktopMenu()"
-              class="hover:bg-white border-3 border-transparent hover:border-3 hover:rounded-full hover:border-purple-700 hover:text-black p-1"
-            >
-              <a href="#service">Services</a>
-            </li>
-            <li onclick="desktopMenu()"
-              class="hover:bg-white border-3 border-transparent hover:border-3 hover:rounded-full hover:border-purple-700 hover:text-black p-1"
-            >
-              <a href="#contact">Contact</a>
-            </li>
-          </ul>
-
-          
+        <div class="lg:hidden block">
           <button onclick="showMenu()" class="lg:hidden block">
             <i class="fa-solid fa-bars fa-fade hidden text-white"></i>
           </button>
@@ -116,6 +95,14 @@
             >
               <a href="#contact">Contact</a>
             </li>
+            <li onclick="showMenu()" 
+            class="hover:bg-white border-3 border-transparent hover:border-3 hover:rounded-full hover:border-purple-700 hover:text-black p-1 font-[Open-Sans]">
+              <a href="https://github.com/Debbie-Stack?tab=repositories">Github</a>
+            </li>
+            <li onclick="showMenu()" 
+            class="hover:bg-white border-3 border-transparent hover:border-3 hover:rounded-full hover:border-purple-700 hover:text-black p-1 font-[Open-Sans]">
+              <a href="https://www.linkedin.com/in/deborah-effiong-3954903a9/">Linkedin</a>
+            </li>
           </ul>
         </div>
       </nav>
@@ -124,18 +111,18 @@
     <main>
       <section class="home-section">
         <div
-          class="bg-black flex-col lg:flex-row flex justify-between items-center gap-10 border-2 w-full h-screen lg:rounded-lg lg:w-[1200px] p-10 mx-auto relative"
+          class="bg-black flex-col lg:flex-row flex justify-between items-center gap-10 border-2 w-full h-screen lg:h-[80vh] lg:rounded-lg lg:w-[1200px] p-10 mx-auto relative"
         >
           <div
             class="w-full h-full lg:h-auto lg:w-[600px] flex flex-col justify-center items-center lg:items-start lg:justify-start absolute px-5 text-center lg:text-left lg:static"
           >
-            <h4 class="font-bold font-serif text-lg text-white">
+            <h4 class="font-bold font-[Open-Sans] text-xl text-white">
               Hey, i'm Debbie...
             </h4>
             <h1 class="font-bold text-[50px] text-purple-500 font-serif">
               Front<span class="text-white">end Developer</span>
             </h1>
-            <p class="text-lg font-bold text-white">
+            <p class="text-xl font-bold text-white font-[Open-Sans]">
               I'm a Frontend Developer based in Lagos, Nigeria. I build
               User-Friendly websites and provide the best User-Experiences.
             </p>
@@ -173,9 +160,10 @@
       </section>
 
       <!-- About page -->
-      <section class="about-section" id="about">
+       <div id="about" class="lg:py-20 py-0">
+      <section class="about-section">
         <div
-          class="flex flex-col-reverse lg:flex-row-reverse lg:justify-between items-center w-full lg:w-[1200px] h-auto lg:h-[80vh] bg-black mx-auto lg:mt-50 mt-0 rounded-lg p-10"
+          class="flex flex-col-reverse lg:flex-row-reverse lg:justify-between items-center w-full lg:w-[1200px] h-auto lg:h-[80vh] bg-black mx-auto rounded-lg p-10"
         >
           <div
             class="w-full lg:w-[500px] rounded-tr-[100px] rounded-bl-[100px] lg:border-4 border-purple-500 mt-10 lg:p-10 bg-black"
@@ -205,10 +193,12 @@
           </div>
         </div>
       </section>
+       </div>
 
+       <div id="service" class="lg:py-10 py-0">
       <section class="service-section" id="service">
         <div
-          class="w-full lg:w-[1200px] h-auto lg:h-[80vh] flex lg:flex-row flex-col justify-center items-center bg-black lg:mt-50 mt-0 rounded-lg lg:px-10 lg:py-10 py-20 px-5 mx-auto"
+          class="w-full lg:w-[1200px] h-auto lg:h-[80vh] flex lg:flex-row flex-col justify-center items-center bg-black rounded-lg lg:px-10 lg:py-0 py-20 px-5 mx-auto"
         >
           <div class="lg:mr-20">
             <h1
@@ -255,10 +245,12 @@
           </div>
         </div>
       </section>
+      </div>
 
+      <div id="contact" class="lg:py-10 py-0">
       <section class="form-section" id="contact">
         <div
-          class="flex lg:flex-row flex-col justify-center lg:h-[85vh] h-auto w-full lg:w-[1200px] lg:py-1 py-20 bg-black mx-auto lg:mt-50 mt-0 rounded-lg cursor-pointer"
+          class="flex lg:flex-row flex-col justify-center lg:h-[85vh] h-auto w-full lg:w-[1200px] lg:py-1 py-20 bg-black mx-auto rounded-lg cursor-pointer"
         >
           <div
             class="p-2 lg-px-10 lg:w-[600px] flex flex-col justify-center items-center"
@@ -353,11 +345,12 @@
           </div>
         </div>
       </section>
+      </div>
     </main>
 
     <footer>
       <section
-        class="w-full lg:w-[1200px] mx-auto lg:mt-50 mt-0 mb-10 bg-black lg:p-10 py-20 lg:h-[80vh] rounded-lg"
+        class="w-full lg:w-[1200px] mx-auto my-10 bg-black lg:p-10 py-20 lg:h-[80vh] rounded-lg"
       >
         <div
           class="flex justify-end items-end gap-5 font-bold"

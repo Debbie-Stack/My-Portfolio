@@ -3,10 +3,7 @@ html{
 }
 
 .slide{
-    transform: translateX(-200px);
-    padding-inline: 60px;
-}
-.desktopSlide{
     transform: translateX(-190px);
     padding-inline: 60px;
 }
+
