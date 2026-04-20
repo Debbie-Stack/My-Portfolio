@@ -17,13 +17,13 @@ const projects = [
     live: "http://127.0.0.1:5500/index.html",
   },
 
-  {
-    image: "/public/PROJECT 1 IMAGE.png",
-    name: "FLAVORIZ",
-    technology: ["React.js", "TailwindCss"],
-    github: "https://github.com/Debbie-Stack/JavaScript",
-    live: "http://127.0.0.1:5500/index.html",
-  },
+  // {
+  //   image: "/public/PROJECT 1 IMAGE.png",
+  //   name: "FLAVORIZ",
+  //   technology: ["React.js", "TailwindCss"],
+  //   github: "https://github.com/Debbie-Stack/JavaScript",
+  //   live: "http://127.0.0.1:5500/index.html",
+  // },
 ];
 
 // Aside bar function
@@ -35,12 +35,14 @@ function showMenu() {
 // Skills Display Function
 const projectDisplayFunction = () => {
   projects.map((project, index) => {
-    return displayProject.innerHTML += `<div class="bg-pink-300/60 h-90 rounded-lg backdrop-blur-3xl">
+    return (displayProject.innerHTML += `<div class="bg-white/30 h-auto rounded-lg backdrop-blur-lg hover:scale-105 transition">
             <div class="project-1">
-                <img src="${project.image}" class="w-100 rounded-t-lg">
+              <div class="w-full h-50 overflow-hidden">
+              <img src="${project.image}" class="w-100 rounded-t-lg">
+              </div>
               </div>
               <div>
-              <div class="p-3 font-bold text-xl">
+              <div class="p-3 font-bold text-xl text-white">
                 <h1>${project.name}</h1>  
               </div>
               <div id="main-div" class="flex justify-between items-center p-3">
@@ -49,15 +51,13 @@ const projectDisplayFunction = () => {
                 <button class="bg-white text-purple-900 py-1 px-3 rounded-full">TailwindCss</button>              
               </div>
               <div>
-              <button><a href=${project.github} target="_blank"><i class="fa-brands fa-square-github text-4xl text-purple-600"></i></a></button>
+              <button><a href=${project.github} target="_blank"><i class="fa-brands fa-github text-[30px]" style="color: rgb(177, 151, 252);"></i></a></button>
               <button><a href=${project.live}><i class="fa-regular fa-eye text-white"></i></a></button>
               </div>
               </div>
               </div>
-            </div>`;
+            </div>`);
   });
 };
 
 projectDisplayFunction();
-
-
