@@ -2,7 +2,7 @@ const displayProject = document.getElementById("portfolio");
 
 const projects = [
   {
-    image: "./image/PROJECT 1 IMAGE.png",
+    image: "/public/PROJECT 1 IMAGE.png",
     name: "FLAVORIZ",
     technology: ["React.js", "TailwindCss"],
     github: "https://github.com/Debbie-Stack/JavaScript",
@@ -10,7 +10,7 @@ const projects = [
   },
 
   {
-    image: "./image/PROJECT 2 IMAGE.png",
+    image: "/public/PROJECT 2 IMAGE.png",
     name: "BIGTRYBE",
     technology: ["React.js", "TailwindCss"],
     github: "https://github.com/Debbie-Stack/JavaScript",
@@ -18,7 +18,7 @@ const projects = [
   },
 
   {
-    image: "./image/PROJECT 1 IMAGE.png",
+    image: "/public/PROJECT 1 IMAGE.png",
     name: "FLAVORIZ",
     technology: ["React.js", "TailwindCss"],
     github: "https://github.com/Debbie-Stack/JavaScript",
